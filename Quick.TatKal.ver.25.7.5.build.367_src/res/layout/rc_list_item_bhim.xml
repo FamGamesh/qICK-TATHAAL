@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@id/items_bhim"
+    android:background="@color/primary_color"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_paytm_bhim"
+            android:background="@drawable/gray_border_layout"
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="65.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_paytm_bhim"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio1_bhim"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <ImageView
+                    android:id="@id/iv_paytm_bhim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_logo_paytm_upi"
+                    android:paddingEnd="55.0dip"
+                    android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

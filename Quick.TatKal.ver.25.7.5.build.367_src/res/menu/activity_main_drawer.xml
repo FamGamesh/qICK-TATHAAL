@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home"
+            android:id="@id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:icon="@drawable/train_avl"
+            android:id="@id/nav_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:icon="@drawable/pnr"
+            android:id="@id/nav_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:icon="@drawable/running_status"
+            android:id="@id/running_status"
+            android:title="@string/running_status" />
+    </group>
+    <item
+        android:title="Share">
+        <menu>
+            <item
+                android:icon="@drawable/share_app"
+                android:id="@id/invite"
+                android:title="Invite friends" />
+        </menu>
+    </item>
+    <item
+        android:title="Miscellaneous">
+        <menu>
+            <item
+                android:icon="@drawable/win"
+                android:id="@id/kureka"
+                android:title="Quiz: Play &amp; Win" />
+        </menu>
+    </item>
+</menu>

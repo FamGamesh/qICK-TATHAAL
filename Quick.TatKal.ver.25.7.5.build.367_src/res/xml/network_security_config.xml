@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config
+        cleartextTrafficPermitted="true">
+        <domain
+            includeSubdomains="true">www.ixigo.com</domain>
+        <domain
+            includeSubdomains="true">www.afrestudios.com</domain>
+        <domain
+            includeSubdomains="true">indianrailapi.com</domain>
+        <domain
+            includeSubdomains="true">www.indianrail.gov.in</domain>
+        <domain
+            includeSubdomains="true">server1.irapi.online</domain>
+        <domain
+            includeSubdomains="true">server2.irapi.online</domain>
+        <domain
+            includeSubdomains="true">server3.irapi.online</domain>
+    </domain-config>
+</network-security-config>

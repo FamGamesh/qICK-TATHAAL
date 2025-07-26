@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/primary_color"
+    android:paddingTop="5.0dip"
+    android:paddingBottom="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20.0dip"
+    android:paddingEnd="20.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/iMudra"
+        android:background="@drawable/rect_border_blue"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:id="@id/rb_type1"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/secondary_color" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/typeTxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IRCTC iMudra"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/wallet"
+        android:background="@drawable/rect_border_blue"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:id="@id/rb_type2"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/secondary_color" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/typeTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/card"
+        android:background="@drawable/rect_border_blue"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:id="@id/rb_type3"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/secondary_color" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/typeTxt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card / Debit Card"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/upi"
+        android:background="@drawable/rect_border_blue"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:id="@id/rb_type4"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/secondary_color" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/typeTxt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BHIM / UPI"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/netbanking"
+        android:background="@drawable/rect_border_blue"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:id="@id/rb_type5"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/secondary_color" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/typeTxt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netbanking"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/gpay"
+        android:background="@drawable/rect_border_blue"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:id="@id/rb_type6"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/secondary_color" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/typeTxt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Pay"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

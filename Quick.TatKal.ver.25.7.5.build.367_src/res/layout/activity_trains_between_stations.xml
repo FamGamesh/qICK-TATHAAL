@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar
+        android:theme="@style/ToolbarTheme"
+        android:id="@id/toolbar"
+        android:background="@color/dialog_color"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        shimmer:popupTheme="@style/CustomActionBarTheme.PopupOverlay">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:id="@id/stations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NDLS -> BAU" />
+            <TextView
+                android:textColor="#ffffffff"
+                android:id="@id/dateAndQuota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sat, 24 Jul, Lower Berth" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:id="@id/trainLayout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_above="@id/ad_view_container"
+        android:layout_below="@id/toolbar">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rcv_trains"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10.0dip" />
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@id/shimmerViewContainer"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            shimmer:duration="800">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <include
+                    layout="@layout/placeholder_avaialbility" />
+                <include
+                    layout="@layout/placeholder_avaialbility" />
+                <include
+                    layout="@layout/placeholder_avaialbility" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/no_trains_info"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:src="@drawable/warning" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" No trains found for given criteria" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@id/ad_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

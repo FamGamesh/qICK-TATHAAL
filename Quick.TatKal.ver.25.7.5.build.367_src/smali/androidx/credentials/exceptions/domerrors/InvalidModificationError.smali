@@ -1,0 +1,66 @@
+.class public final Landroidx/credentials/exceptions/domerrors/InvalidModificationError;
+.super Landroidx/credentials/exceptions/domerrors/DomError;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/credentials/exceptions/domerrors/InvalidModificationError$Companion;
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Landroidx/credentials/exceptions/domerrors/InvalidModificationError$Companion;
+
+.field public static final TYPE_CREATE_PUBLIC_KEY_CREDENTIAL_INVALID_MODIFICATION_ERROR:Ljava/lang/String; = "androidx.credentials.TYPE_INVALID_MODIFICATION_ERROR"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Landroidx/credentials/exceptions/domerrors/InvalidModificationError$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Landroidx/credentials/exceptions/domerrors/InvalidModificationError$Companion;-><init>(Lkotlin/jvm/internal/j;)V
+
+    sput-object v0, Landroidx/credentials/exceptions/domerrors/InvalidModificationError;->Companion:Landroidx/credentials/exceptions/domerrors/InvalidModificationError$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    const-string v0, "androidx.credentials.TYPE_INVALID_MODIFICATION_ERROR"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0}, Landroidx/credentials/exceptions/domerrors/DomError;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method

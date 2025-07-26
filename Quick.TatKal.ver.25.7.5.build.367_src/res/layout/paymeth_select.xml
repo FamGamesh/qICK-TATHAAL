@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/primary_color"
+    android:padding="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:id="@id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_method"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10.0dip" />
+    <RelativeLayout
+        android:background="@drawable/gradient_rectangle"
+        android:paddingBottom="20.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:layout_below="@id/textView36">
+        <RadioGroup
+            android:id="@id/radioGroup"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:weightSum="1.0"
+            android:layout_marginStart="10.0dip"
+            android:layout_alignParentStart="true">
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton5"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/debit_card_with_pin"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/irctc_ipay"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upi_bhim_ussd"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/net_banking"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton7"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_pay"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash_card_wallets"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/irctc_prepaid"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/irctc_ewallet"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton12"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_on_delivery"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+            <RadioButton
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/radioButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/payment_gateway_credit_card"
+                android:layout_marginStart="10.0dip"
+                android:buttonTint="#ff9c5df7" />
+        </RadioGroup>
+        <ImageView
+            android:id="@id/fastest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fastest"
+            android:layout_below="@id/radioGroup"
+            android:layout_marginStart="20.0dip"
+            android:layout_marginEnd="30.0dip" />
+        <CheckBox
+            android:textSize="16.0sp"
+            android:textColor="#ffffffff"
+            android:id="@id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:button="@drawable/checkbox_button"
+            android:text="@string/manual_payment"
+            android:layout_below="@id/fastest"
+            android:paddingStart="10.0dip"
+            android:layout_marginStart="20.0dip"
+            android:layout_alignParentStart="true" />
+        <CheckBox
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:id="@id/autofillOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:button="@drawable/checkbox_button"
+            android:text="Autofill OTP"
+            android:layout_below="@id/checkBox3"
+            android:paddingStart="10.0dip"
+            android:layout_marginStart="20.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/advanced"
+            android:background="@color/dialog_color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20.0dip"
+            android:layout_below="@id/autofillOTP">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="20.0dip"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                    android:layout_marginStart="5.0dip" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/advanced"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/delayRow"
+                android:paddingBottom="10.0dip"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#ffdddddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:text="@string/payment_selection_time"
+                    android:layout_weight="3.0" />
+                <Spinner
+                    android:entries="@array/delaySeconds"
+                    android:id="@id/delay_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="2.0"
+                    android:layout_marginEnd="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffbbbbbb"
+            android:id="@id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_secured"
+            android:layout_below="@id/advanced"
+            android:layout_alignStart="@id/checkBox3" />
+    </RelativeLayout>
+</RelativeLayout>

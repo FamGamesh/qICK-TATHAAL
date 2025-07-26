@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/show_password"
+        android:id="@id/show_password"
+        android:title="Show Password"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/save"
+        android:id="@id/save"
+        android:title="Save"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/lock"
+        android:id="@id/lock"
+        android:title="Password Protect"
+        app:showAsAction="always" />
+</menu>

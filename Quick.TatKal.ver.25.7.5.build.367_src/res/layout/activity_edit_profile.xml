@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <RelativeLayout
+        android:background="@color/primary_color"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/profile_image"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_margin="50.0dip"
+            android:src="@drawable/pic"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#ff9c5df7"
+            app:civ_border_width="5.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/profile_image"
+            android:paddingStart="40.0dip"
+            android:paddingEnd="40.0dip">
+            <TextView
+                android:textSize="13.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/name" />
+            <EditText
+                android:textColor="#ffffffff"
+                android:id="@id/name"
+                android:background="@drawable/free_tickets_bg"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="3.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="3.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="5.0dip"
+                android:inputType="textCapWords"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/mobile_no" />
+            <EditText
+                android:textColor="#ffffffff"
+                android:id="@id/phoneNo"
+                android:background="@drawable/gray_bg_disabled"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="3.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="3.0dip"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="5.0dip"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:drawableEnd="@drawable/edit"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/e_mail" />
+            <EditText
+                android:textColor="#ffffffff"
+                android:id="@id/email"
+                android:background="@drawable/gray_bg_disabled"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="3.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="3.0dip"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="5.0dip"
+                android:cursorVisible="false"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/edit"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip" />
+            <Button
+                android:enabled="false"
+                android:textColor="#ffffffff"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/save"
+                android:background="@drawable/new_form_bg"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40.0dip"
+                android:text="@string/save"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/tabsLayour"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ffff3377"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#ffffff00"
+            app:tabTextColor="#ffffffff" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:id="@id/scrollView"
+        android:background="@color/primary_color"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabsLayour"
+        android:layout_alignParentBottom="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true" />
+            <FrameLayout
+                android:id="@id/fl_adplaceholder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_recycler_view" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view1"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/fl_adplaceholder" />
+            <FrameLayout
+                android:id="@id/fl_adplaceholder1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_recycler_view1" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view2"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/fl_adplaceholder1" />
+            <FrameLayout
+                android:id="@id/fl_adplaceholder2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_recycler_view2" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view3"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/fl_adplaceholder2" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view4"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view13" />
+            <FrameLayout
+                android:id="@id/fl_adplaceholder3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_recycler_view4" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view5"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/fl_adplaceholder3" />
+            <FrameLayout
+                android:id="@id/fl_adplaceholder4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_recycler_view5" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view6"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/fl_adplaceholder4" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view7"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view6" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view8"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view7" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view9"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view8" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view10"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view9" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view11"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view10" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view12"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view11" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view13"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view16" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view14"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view12" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view15"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view14" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/my_recycler_view16"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/my_recycler_view3" />
+            <ImageView
+                android:id="@id/imageView9"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_margin="10.0dip"
+                android:layout_below="@id/my_recycler_view15"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/info" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:id="@id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/caps_lock_info"
+                android:layout_alignTop="@id/imageView9"
+                android:layout_marginEnd="10.0dip"
+                android:layout_toEndOf="@id/imageView9" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    android:description="@string/access_desc"
+    android:accessibilityEventTypes="typeWindowContentChanged|typeWindowStateChanged"
+    android:packageNames="cris.org.in.prs.ima, com.phonepe.app, com.google.android.apps.nbu.paisa.user,     net.one97.paytm,in.org.npci.upiapp, org.cris.aikyam"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="100"
+    android:accessibilityFlags="flagReportViewIds|flagRetrieveInteractiveWindows"
+    android:canRetrieveWindowContent="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

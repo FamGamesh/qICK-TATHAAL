@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/activity_main"
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <ProgressBar
+        android:id="@id/progressBar3"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        style="?android:progressBarStyleHorizontal" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/continueBtn"
+        android:layout_below="@id/progressBar3"
+        android:layout_alignParentStart="true">
+        <com.tatkal.train.quick.AdvancedWebView
+            android:id="@id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+    <Button
+        android:textSize="18.0sp"
+        android:textColor="#ffffffff"
+        android:id="@id/continueBtn"
+        android:background="@drawable/round_rect_secondary"
+        android:padding="10.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:text="Continue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textAlignment="center" />
+</RelativeLayout>

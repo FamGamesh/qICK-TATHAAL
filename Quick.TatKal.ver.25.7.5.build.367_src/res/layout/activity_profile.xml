@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <RelativeLayout
+        android:id="@id/topLayout"
+        android:background="@drawable/theme_gradient"
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:layout_below="@id/toolbar">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/profile_image"
+            android:layout_width="75.0dip"
+            android:layout_height="75.0dip"
+            android:src="@drawable/pic"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20.0dip"
+            app:civ_border_color="#ff9c5df7"
+            app:civ_border_width="0.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20.0dip"
+            android:layout_toEndOf="@id/profile_image">
+            <TextView
+                android:textSize="20.0sp"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:id="@id/cust_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Awesome User" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="xyz@gmail.com" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+919999999999" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="#ffdddddd"
+                android:id="@id/edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/edit_profile" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="#ffff9999"
+                android:layout_gravity="center_vertical"
+                android:id="@id/delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_account" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/logout_layout"
+        android:layout_below="@id/topLayout">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/tickets"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <ImageView
+                android:id="@id/icon0"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/ticket_white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip"
+                android:layout_toEndOf="@id/icon0">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_tickets" />
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffdddddd"
+                    android:id="@id/no_of_tickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.0dip"
+                    android:text="You have 1 ticket booking left" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/help_and_support"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <ImageView
+                android:id="@id/icon1"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/support"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip"
+                android:layout_toEndOf="@id/icon1">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help_amp_support" />
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffdddddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.0dip"
+                    android:text="@string/get_help_on_train_ticket_booking" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/lang"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <ImageView
+                android:id="@id/icon2"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/language"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip"
+                android:layout_toEndOf="@id/icon2">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language" />
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffdddddd"
+                    android:id="@id/selected_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.0dip"
+                    android:text="English" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/share_app"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <ImageView
+                android:id="@id/icon3"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/share_white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip"
+                android:layout_toEndOf="@id/icon3">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_app" />
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffdddddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.0dip"
+                    android:text="@string/share_app_link_with_your_firends" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/rate"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <ImageView
+                android:id="@id/icon4"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/star"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip"
+                android:layout_toEndOf="@id/icon4">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate_us_title" />
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffdddddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.0dip"
+                    android:text="@string/we_d_like_to_know_about_your_experience" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@id/legal"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <ImageView
+                android:id="@id/icon5"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/info_white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20.0dip"
+                android:layout_toEndOf="@id/icon5">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/legal" />
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffdddddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.0dip"
+                    android:text="@string/privacy_policy_terms_amp_conditions" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/logout_layout"
+        android:padding="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/logout" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffcf6679"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@id/loading_layout"
+        android:background="#44ffffff"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#ffffffff" />
+        <TextView
+            android:textColor="#ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="Loggin out…"
+            android:layout_below="@id/progress_bar"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

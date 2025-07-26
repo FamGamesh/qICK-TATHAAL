@@ -1,0 +1,137 @@
+.class final Lcom/google/android/gms/measurement/internal/B0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private final synthetic a:Ljava/util/concurrent/atomic/AtomicReference;
+
+.field private final synthetic b:Lcom/google/android/gms/measurement/internal/zzjq;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/measurement/internal/zzjq;Ljava/util/concurrent/atomic/AtomicReference;)V
+    .locals 3
+
+    move-object v0, p0
+
+    iput-object p2, v0, Lcom/google/android/gms/measurement/internal/B0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const-string v2, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    iput-object p1, v0, Lcom/google/android/gms/measurement/internal/B0;->b:Lcom/google/android/gms/measurement/internal/zzjq;
+
+    const/4 v2, 0x6
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v2, 0x5
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 7
+
+    move-object v4, p0
+
+    iget-object v0, v4, Lcom/google/android/gms/measurement/internal/B0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v6, 0x3
+
+    monitor-enter v0
+
+    :try_start_0
+    const/4 v6, 0x1
+
+    iget-object v1, v4, Lcom/google/android/gms/measurement/internal/B0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v6, 0x6
+
+    iget-object v2, v4, Lcom/google/android/gms/measurement/internal/B0;->b:Lcom/google/android/gms/measurement/internal/zzjq;
+
+    const/4 v6, 0x4
+
+    invoke-virtual {v2}, Lcom/google/android/gms/measurement/internal/l0;->a()Lcom/google/android/gms/measurement/internal/zzag;
+
+    move-result-object v6
+
+    move-object v2, v6
+
+    iget-object v3, v4, Lcom/google/android/gms/measurement/internal/B0;->b:Lcom/google/android/gms/measurement/internal/zzjq;
+
+    const/4 v6, 0x5
+
+    invoke-virtual {v3}, Lcom/google/android/gms/measurement/internal/s;->k()Lcom/google/android/gms/measurement/internal/zzgg;
+
+    move-result-object v6
+
+    move-object v3, v6
+
+    invoke-virtual {v3}, Lcom/google/android/gms/measurement/internal/zzgg;->A()Ljava/lang/String;
+
+    move-result-object v6
+
+    move-object v3, v6
+
+    invoke-virtual {v2, v3}, Lcom/google/android/gms/measurement/internal/zzag;->B(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    move-object v2, v6
+
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    const/4 v6, 0x5
+
+    iget-object v1, v4, Lcom/google/android/gms/measurement/internal/B0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v6, 0x2
+
+    invoke-virtual {v1}, Ljava/lang/Object;->notify()V
+
+    const/4 v6, 0x7
+
+    monitor-exit v0
+
+    const/4 v6, 0x7
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception v1
+
+    iget-object v2, v4, Lcom/google/android/gms/measurement/internal/B0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v6, 0x1
+
+    invoke-virtual {v2}, Ljava/lang/Object;->notify()V
+
+    const/4 v6, 0x1
+
+    throw v1
+
+    const/4 v6, 0x1
+
+    :goto_0
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v1
+
+    const/4 v6, 0x1
+.end method

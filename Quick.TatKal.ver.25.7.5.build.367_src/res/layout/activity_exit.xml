@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ff555555"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:padding="15.0dip"
+            android:layout_width="120.0dip"
+            android:layout_height="120.0dip"
+            android:src="@drawable/tatkal_logo_rounded" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit Quick Tatkal ?" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/exit_yes"
+                android:background="@drawable/new_form_bg"
+                android:visibility="visible"
+                android:layout_width="140.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="20.0dip"
+                android:text="Yes"
+                android:layout_weight="1.0"
+                android:layout_centerInParent="true"
+                android:textAllCaps="false" />
+            <Button
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/exit_no"
+                android:background="@drawable/new_form_bg"
+                android:visibility="visible"
+                android:layout_width="140.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="20.0dip"
+                android:text="No"
+                android:layout_weight="1.0"
+                android:layout_centerInParent="true"
+                android:textAllCaps="false" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@id/fl_adplaceholder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/tabLayout"
+    android:background="@color/primary_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ffff3377"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#ffffff00"
+            app:tabTextColor="#ffffffff" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/relativeLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <FrameLayout
+        android:id="@id/ad_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <RelativeLayout
+        android:id="@id/relativeLayout"
+        android:background="@drawable/button_drawable"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_margin="10.0dip"
+        android:layout_above="@id/ad_view_container">
+        <TextView
+            android:textSize="26.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:id="@id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/book_now"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@id/spin_kit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/colorPrimary"
+        style="@style/SpinKitView.Large.FadingCircle" />
+</RelativeLayout>

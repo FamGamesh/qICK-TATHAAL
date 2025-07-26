@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/theme_round_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center"
+        android:id="@id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="Promo Code"
+        android:layout_weight="1.0" />
+    <TextView
+        android:textColor="#ffbd9f5a"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="Enter Promo Code to get yearly GOLD Pack at discounted price"
+        android:textAlignment="center"
+        android:layout_marginStart="30.0dip"
+        android:layout_marginEnd="30.0dip" />
+    <EditText
+        android:textSize="16.0sp"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/code"
+        android:background="@drawable/custom_edittext_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:inputType="textCapCharacters"
+        android:paddingStart="10.0dip"
+        android:layout_marginStart="30.0dip"
+        android:layout_marginEnd="30.0dip" />
+    <TextView
+        android:textColor="#ffff7777"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/status"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:text="Incorrect promo code. Please try again"
+        android:textAlignment="center"
+        android:layout_marginStart="30.0dip"
+        android:layout_marginEnd="30.0dip" />
+    <ProgressBar
+        android:layout_gravity="center_horizontal"
+        android:id="@id/loader"
+        android:visibility="gone"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginTop="10.0dip"
+        android:indeterminateTint="#ffffffff" />
+    <Button
+        android:enabled="false"
+        android:textSize="18.0sp"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/verify"
+        android:background="@drawable/new_form_bg"
+        android:visibility="visible"
+        android:layout_width="200.0dip"
+        android:layout_height="40.0dip"
+        android:layout_margin="20.0dip"
+        android:text="@string/verify"
+        android:textAllCaps="false" />
+</LinearLayout>

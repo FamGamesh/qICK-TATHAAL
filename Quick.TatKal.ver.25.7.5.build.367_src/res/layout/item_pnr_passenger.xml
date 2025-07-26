@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8.0dip"
+    card_view:cardElevation="5.0dip"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/person" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5.0dip">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passenger 1" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Status : RLWL/-/17/GN" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ff008800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Status : CNF/S6/72/GN" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

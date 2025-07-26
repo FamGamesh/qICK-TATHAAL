@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/theme_round_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center"
+        android:id="@id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/mobile_verification"
+        android:layout_weight="1.0" />
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@id/mobile_no_layout"
+        android:background="@drawable/gradient_rectangle_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginStart="20.0dip"
+        android:layout_marginEnd="20.0dip">
+        <com.hbb20.CountryCodePicker
+            android:id="@id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginStart="10.0dip"
+            app:ccpDialog_backgroundColor="@color/dialog_color"
+            app:ccpDialog_fastScroller_bubbleColor="@color/secondary_color"
+            app:ccpDialog_fastScroller_handleColor="#ffffffff"
+            app:ccpDialog_searchEditTextTint="#ffffffff"
+            app:ccpDialog_showTitle="false"
+            app:ccpDialog_textColor="#ffffffff"
+            app:ccp_arrowColor="@color/secondary_color"
+            app:ccp_arrowSize="32.0sp"
+            app:ccp_contentColor="#ffffffff" />
+        <EditText
+            android:textColor="#ffffffff"
+            android:textColorHint="#ffbbbbbb"
+            android:id="@id/mobile_no"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_no"
+            android:maxLength="10"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:fontFamily="sans-serif"
+            android:layout_toEndOf="@id/ccp" />
+    </RelativeLayout>
+    <TextView
+        android:textColor="#ffaaaaaa"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/otp_send_info"
+        android:layout_marginStart="20.0dip"
+        android:layout_marginEnd="20.0dip" />
+    <ProgressBar
+        android:layout_gravity="center_horizontal"
+        android:id="@id/loader"
+        android:visibility="gone"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginTop="10.0dip"
+        android:indeterminateTint="#ffffffff" />
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:textSize="20.0sp"
+        android:textColor="#ffffffff"
+        android:textColorHint="#ffeeeeee"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/otp"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:maxLength="4"
+        android:inputType="number"
+        android:paddingStart="10.0dip"
+        android:layout_marginStart="30.0dip"
+        android:layout_marginEnd="30.0dip" />
+    <Button
+        android:enabled="false"
+        android:textSize="18.0sp"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/verify"
+        android:background="@drawable/new_form_bg"
+        android:visibility="visible"
+        android:layout_width="200.0dip"
+        android:layout_height="40.0dip"
+        android:layout_margin="20.0dip"
+        android:text="@string/verify"
+        android:textAllCaps="false" />
+</LinearLayout>

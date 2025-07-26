@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/dialog_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <WebView
+        android:id="@id/webView"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/info"
+        android:layout_below="@id/toolbar" />
+    <ProgressBar
+        android:id="@id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#ffffffff" />
+    <TextView
+        android:textSize="10.0sp"
+        android:textColor="#ffffffff"
+        android:id="@id/info"
+        android:background="@color/secondary_color"
+        android:padding="5.0dip"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0dip"
+        android:text="Powered by https://www.indianrail.gov.in/"
+        android:layout_above="@id/ad_view_container"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+    <FrameLayout
+        android:id="@id/ad_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

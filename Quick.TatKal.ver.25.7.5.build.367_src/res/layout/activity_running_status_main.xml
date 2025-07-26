@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/train_no_name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10.0dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip">
+                <AutoCompleteTextView
+                    android:textColor="#ffffffff"
+                    android:textColorHint="#ffcccccc"
+                    android:id="@id/ed_train"
+                    android:background="@drawable/free_tickets_bg"
+                    android:paddingTop="3.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:inputType="textCapCharacters"
+                    android:paddingStart="10.0dip"
+                    android:paddingEnd="10.0dip"
+                    android:layout_toStartOf="@id/search_icon" />
+                <ImageView
+                    android:id="@id/search_icon"
+                    android:padding="5.0dip"
+                    android:visibility="gone"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:src="@drawable/search"
+                    android:layout_marginStart="5.0dip"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_date"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10.0dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip">
+                <Spinner
+                    android:textColor="#ffffffff"
+                    android:id="@id/start_dt"
+                    android:background="@drawable/spinner_theme"
+                    android:paddingTop="3.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:spinnerMode="dropdown"
+                    android:paddingStart="10.0dip"
+                    android:paddingEnd="10.0dip"
+                    local:popupTheme="@style/CustomSpinnerTheme" />
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:id="@id/relativeLayout"
+            android:background="@drawable/new_form_bg"
+            android:visibility="visible"
+            android:layout_width="200.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/search"
+            android:textAllCaps="false" />
+        <FrameLayout
+            android:id="@id/fl_adplaceholder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

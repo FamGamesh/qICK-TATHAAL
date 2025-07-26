@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/privacy_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="#ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.0dip"
+            android:text="@string/privacy_policy" />
+    </LinearLayout>
+    <View
+        android:background="#ffcccccc"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/tnc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="#ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.0dip"
+            android:text="@string/terms_amp_conditions" />
+    </LinearLayout>
+    <View
+        android:background="#ffcccccc"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/accessibility"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="#ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.0dip"
+            android:text="@string/use_of_accessibility_service" />
+    </LinearLayout>
+    <View
+        android:background="#ffcccccc"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ffcccccc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISCLAIMER" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#ffaaaaaa"
+                android:id="@id/disclaimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="Quick Tatkal does not represent any government entity (in this case, IRCTC - Indian Railway Catering and Tourism Corporation) and train ticket bookings are carried out on the official IRCTC website (https://www.irctc.co.in) via an in-app browser by user's own IRCTC account only"
+                android:layout_marginStart="10.0dip"
+                android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

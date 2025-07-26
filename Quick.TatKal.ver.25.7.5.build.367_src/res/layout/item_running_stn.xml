@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/parent"
+    android:background="#ff111111"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="70.0dip"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#ffffffff"
+            android:id="@id/sch_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="5:25 PM"
+            android:layout_marginStart="10.0dip" />
+        <TextView
+            android:textColor="#ff00ff00"
+            android:id="@id/act_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:text="5:29 PM"
+            android:layout_marginStart="10.0dip" />
+        <TextView
+            android:textColor="#ffbbbbbb"
+            android:id="@id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="Day 1\n0 km"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="30.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10.0dip">
+        <ImageView
+            android:id="@id/bar"
+            android:layout_width="20.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/bar_fill"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@id/train_halt"
+            android:visibility="gone"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:src="@drawable/train_running" />
+        <ImageView
+            android:id="@id/live_train"
+            android:visibility="gone"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="40.0dip"
+            android:src="@drawable/train_running" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingStart="10.0dip"
+        android:paddingEnd="10.0dip">
+        <TextView
+            android:textColor="#ffffffff"
+            android:id="@id/cityLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BURHAnPUR" />
+        <TextView
+            android:textColor="#ffffffff"
+            android:id="@id/depTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:27 PM"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:textColor="#ffffffff"
+            android:id="@id/cityShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BAU"
+            android:layout_below="@id/cityLong" />
+        <TextView
+            android:textColor="#ffbbbbbb"
+            android:id="@id/intStns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:text="2 stations ▼"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center" />
+        <TextView
+            android:textColor="#ff00ff00"
+            android:id="@id/actDepTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:31 PM"
+            android:layout_below="@id/cityLong"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffff0000"
+            android:id="@id/delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:text="4m delay"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

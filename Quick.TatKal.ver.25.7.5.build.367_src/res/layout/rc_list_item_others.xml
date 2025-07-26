@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@id/items_others"
+    android:background="@color/primary_color"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_ipay_pg"
+            android:background="@drawable/gray_border_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_ipay_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio1_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/iv_ipay_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Autopay"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type1"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_paytm_pg"
+            android:background="@drawable/gray_border_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_paytm_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio2_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/iv_paytm_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMI on Cards"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type2"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_mobikwik_pg"
+            android:background="@drawable/gray_border_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_mobikwik_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio3_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/iv_mobikwik_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Later"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type3"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_payu_pg"
+            android:background="@drawable/gray_border_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_payu_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio4_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/iv_payu_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type4"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_razor_pay_pg"
+            android:background="@drawable/gray_border_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_razor_pay_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio5_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/iv_razorpay_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debit Card"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type5"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_phonepe_pg"
+            android:background="@drawable/gray_border_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_phonepe_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio6_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/iv_phonepe_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="International Card"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type6"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_icici_pg"
+            android:background="@drawable/gray_border_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_icici_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio7_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/iv_icici_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NetBanking"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type7"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_hdfc_pg"
+            android:background="@drawable/gray_border_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_hdfc_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio8_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <ImageView
+                    android:id="@id/iv_hdfc_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_logo_hdfc_mpp"
+                    android:paddingEnd="55.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type8"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/cv_airpay_pg"
+            android:background="@drawable/gray_border_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:paddingStart="10.0dip">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/click_airpay_pg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@id/radio9_pg"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/secondary_color" />
+                <ImageView
+                    android:id="@id/iv_airpay_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_logo_airpay_mpp"
+                    android:paddingEnd="55.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            android:id="@id/type9"
+            android:visibility="gone"
+            layout="@layout/rc_payment_type" />
+    </LinearLayout>
+</ScrollView>

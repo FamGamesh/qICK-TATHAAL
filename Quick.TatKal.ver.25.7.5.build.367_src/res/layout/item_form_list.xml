@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/gray_bg_disabled"
+    android:paddingTop="10.0dip"
+    android:paddingBottom="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="15.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/imageView32"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/train_round" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:id="@id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text="TextView"
+        android:layout_marginStart="10.0dip"
+        app:layout_constraintStart_toEndOf="@id/lock"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:textSize="14.0sp"
+        android:textColor="#ffffffff"
+        android:textColorHint="#ffaaaaaa"
+        android:id="@id/formNameEd"
+        android:visibility="invisible"
+        android:layout_width="120.0dip"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_name"
+        android:selectAllOnFocus="true"
+        android:paddingStart="10.0dip"
+        android:layout_marginStart="10.0dip"
+        android:backgroundTint="#ffcccccc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lock"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/done"
+        android:visibility="invisible"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginStart="5.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/formNameEd"
+        app:layout_constraintStart_toEndOf="@id/formNameEd"
+        app:srcCompat="@drawable/done" />
+    <ImageView
+        android:id="@id/lock"
+        android:visibility="gone"
+        android:layout_width="17.0dip"
+        android:layout_height="17.0dip"
+        android:layout_marginBottom="3.0dip"
+        android:src="@drawable/lock"
+        android:layout_marginStart="10.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView32"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="10.0sp"
+        android:textColor="#ffffffff"
+        android:id="@id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/textView98"
+        app:layout_constraintTop_toBottomOf="@id/textView98" />
+    <ImageView
+        android:id="@id/edit"
+        android:layout_width="15.0dip"
+        android:layout_height="15.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_marginStart="5.0dip"
+        app:layout_constraintStart_toEndOf="@id/textView98"
+        app:layout_constraintTop_toTopOf="@id/textView98"
+        app:srcCompat="@drawable/edit" />
+    <ImageView
+        android:id="@id/copy"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_marginEnd="10.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/copy" />
+    <ImageView
+        android:id="@id/delete"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_marginEnd="20.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>

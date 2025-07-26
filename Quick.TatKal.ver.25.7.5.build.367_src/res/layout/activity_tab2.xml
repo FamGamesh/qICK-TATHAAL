@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/tabLayout"
+    android:background="@color/primary_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip" />
+    <LinearLayout
+        android:id="@id/tab"
+        android:background="@color/dialog_color"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:baselineAligned="false"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:id="@id/tab_website"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:id="@id/website_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/website"
+                android:layout_centerInParent="true" />
+            <View
+                android:id="@id/website_marker"
+                android:background="@color/colorAccent"
+                android:layout_width="fill_parent"
+                android:layout_height="3.0dip"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@id/tab_rc"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:id="@id/rc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/railconnect"
+                android:layout_centerInParent="true" />
+            <View
+                android:id="@id/rc_marker"
+                android:background="@color/colorAccent"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="3.0dip"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/no_tickets_info"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:layout_below="@id/tab"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="20.0dip">
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/info"
+            app:tint="#ff777777" />
+        <TextView
+            android:textColor="#ffdda500"
+            android:id="@id/upgrade_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="You have no credits, Only demo booking available. To enjoy uninterrupted bookings, Upgrade now 👉"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/relativeLayout"
+        android:layout_below="@id/no_tickets_info">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@id/web_cred"
+                layout="@layout/irctc_credentials" />
+            <include
+                android:id="@id/rc_cred"
+                android:visibility="gone"
+                layout="@layout/rc_credentials" />
+            <include
+                android:id="@id/journey"
+                layout="@layout/journey_details" />
+            <FrameLayout
+                android:id="@id/fl_adplaceholder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <include
+                android:id="@id/passenger"
+                layout="@layout/passenger_detail" />
+            <include
+                android:id="@id/child"
+                layout="@layout/child_detail" />
+            <include
+                android:id="@id/gst"
+                layout="@layout/gst" />
+            <include
+                android:id="@id/misc"
+                layout="@layout/miscellaneous" />
+            <FrameLayout
+                android:id="@id/fl_adplaceholder_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <include
+                android:id="@id/web_payment"
+                layout="@layout/paymeth_select" />
+            <include
+                android:id="@id/rc_payment"
+                android:visibility="gone"
+                layout="@layout/rc_payment_method" />
+            <include
+                android:id="@id/card_pymt"
+                layout="@layout/card_payment" />
+            <include
+                android:id="@id/web_wallet"
+                android:visibility="gone"
+                layout="@layout/ewallet" />
+            <include
+                android:id="@id/irctc_ewallet"
+                android:visibility="gone"
+                layout="@layout/irctc_wallet" />
+            <include
+                android:id="@id/netbank"
+                android:visibility="gone"
+                layout="@layout/netbanking" />
+            <include
+                android:id="@id/web_upi"
+                android:visibility="gone"
+                layout="@layout/upi" />
+            <include
+                android:id="@id/pod"
+                android:visibility="gone"
+                layout="@layout/pod" />
+            <include
+                android:id="@id/multple_pymt"
+                android:visibility="gone"
+                layout="@layout/multiple_payment" />
+            <include
+                android:id="@id/rc_wallet"
+                android:visibility="gone"
+                layout="@layout/rc_ewallet" />
+            <include
+                android:id="@id/rc_upi"
+                android:visibility="gone"
+                layout="@layout/rc_upi" />
+            <include
+                android:id="@id/imudra"
+                android:visibility="gone"
+                layout="@layout/rc_mobile_input" />
+            <include
+                android:id="@id/ipay"
+                android:visibility="gone"
+                layout="@layout/irctc_ipay" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@id/ad_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <Button
+        android:textSize="22.0sp"
+        android:textColor="#ffffffff"
+        android:id="@id/relativeLayout"
+        android:background="@drawable/round_rect_secondary"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:text="@string/book_now"
+        android:layout_above="@id/ad_view_container"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textAlignment="center" />
+    <RelativeLayout
+        android:id="@id/spin_kit"
+        android:background="#33ffffff"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#ffffffff" />
+    </RelativeLayout>
+</RelativeLayout>
